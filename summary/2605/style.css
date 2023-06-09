@@ -1,0 +1,135 @@
+:root {
+    --main-color-black: #000;
+    --main-bg-greyExtraLight: #F5F5F5;
+    --main-color-white: #FFFFFF;
+    --main-color-gray: #959DAD;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+body {
+    background-color: var(--main-bg-greyExtraLight);
+}
+
+.container {
+    padding: 30px 0;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+header {
+    background: var(--main-color-white);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    border-radius: 0 0 8px 8px;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 30px 0;
+}
+
+.header__cart {
+    position: relative;
+}
+
+.header__cart span {
+    background-color: var(--main-color-gray);
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    display: block;
+    text-align: center;
+    right: 0;
+    top: 0;
+    font-size: 8px;
+    color: var(--main-color-white);
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.wrapper {
+    display: flex;
+}
+
+aside {
+    max-width: 160px;
+}
+
+.content {
+    width: 100%;
+}
+
+.navbar {
+    list-style: none;
+}
+
+.navbar__item {
+    display: block;
+    padding: 12px 0;
+    text-decoration: none;
+    color: var(--main-color-gray);
+}
+
+.navbar__item:not(.navbar__item_active):hover {
+    color: #59606D;
+}
+
+.navbar__item_active {
+    text-decoration: underline;
+    color: #1F1F1F;
+}
+
+.cards__header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.filter {
+    padding: 10px 0;
+    color: #1F1F1F;
+    font-size: 16px;
+    position: relative;
+}
+
+.filter__label{
+    margin-bottom: 10px;
+}
+
+.filter__label span {
+    color: var(--main-color-gray);
+    font-size: 16px;
+    cursor: context-menu;
+}
+
+.filter:hover .filter__dropdown {
+    display: block;
+}
+
+.filter__dropdown{
+    position: absolute;
+    background-color: var(--main-color-white);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    list-style: none;
+    padding: 8px 0;
+    right: 0;
+    display: none;
+}
+
+.filter__dropdown_item{
+    padding: 4px 12px;
+    color: var(--main-color-gray);
+    cursor: auto;
+}
+
+.filter__dropdown_item:hover{
+    background-color: #F8F8F8;
+    color: #1F1F1F;
+}
