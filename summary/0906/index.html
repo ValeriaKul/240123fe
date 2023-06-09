@@ -13,7 +13,7 @@
 </head>
 
 <body>
-
+<button class="btn" onclick="asyncGetPost()"> GET POSTS</button>
 <header>
     <div class="container header__content">
         <h2>TestList</h2>
@@ -74,6 +74,22 @@
     </main>
 </div>
 
+<div class="modal">
+    <div class="cart">
+        <div class="cart__header">
+            <h3>Корзина</h3>
+            <img src="./img/close.svg" alt="close" class="cart__close">
+        </div>
+        <div class="cart__body">
+            <p class="cart__empty">
+                Пока что Вы ничего не добавили в корзину.
+            </p>
+            <button class="btn">
+                Перейти к выбору
+            </button>
+        </div>
+    </div>
+</div>
 
 <script src="js/index.js"></script>
 </body>
