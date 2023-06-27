@@ -112,6 +112,8 @@ let student1 = new Student("John", "Done", [5, 8, 7, 10, 6, 8]);
 // console.log(student1.average());
 // console.log(student1);
 
+//!---------Статические классы--------
+
 class Math2 {
   static add(a, b) {
     return a + b;
